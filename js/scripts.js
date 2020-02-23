@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#program").submit(function() {
+  $("#program").submit(function(event) {
     var ruby = 0;
     var c = 0;
     var js = 0;
@@ -27,5 +27,33 @@ $(document).ready(function() {
     } else if(html > ruby && html > c && html > js && html > python && html > swift) {
       $(".html").val();
     }
+
+    if(ruby === Math.max(c, js, python, swift, html)) {
+      $(".ruby").fadeIn();
+    }
+    
+    if(c === Math.max(ruby, js, python, swift, html)) {
+      $(".c#").fadeIn();
+    }
+
+    if(js === Math.max(ruby, c, python, swift, html)) {
+      $(".js").fadeIn();
+    }
+
+    if(python === Math.max(ruby, c, js, swift, html)) {
+      $(".python").fadeIn();
+    }
+
+    if(swift === Math.max(ruby, c, js, python, html)) {
+      $(".swift").fadeIn();
+    }
+
+    if(html === Math.max(ruby, c, js, python, swift)) {
+      $(".html").fadeIn();
+    }
+
+    $(".result").fadeIn();
+    
+    event.preventDefault();
   });
 });
