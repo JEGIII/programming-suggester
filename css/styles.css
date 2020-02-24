@@ -11,3 +11,7 @@ h1 {
 #result {
   display: none;
 }
+
+.jumbotron {
+  background-color: darkturquoise;
+}

@@ -13,18 +13,29 @@ $(document).ready(function() {
     let levelInput = $("input:radio[name=level]:checked").val();
     let infoInput = $("input:radio[name=info]:checked").val();
     let areaInput = $("input:radio[name=area]:checked").val();
+    
+    /*One concern I'm having is if the if-statement should look like this:
+    
+    if (fieldInput === "ruby" && osInput === "ms" && levelInput === "ruby" && infoInput === "ruby" && areaInput === "school anywhere home") {
+      
+    or this:
+      
+    if (ruby > c && ruby > js && ruby > python && ruby > swift && ruby > html) {
+    $(".ruby").fadeIn(); 
+    
+    */
 
-    if(ruby > c && ruby > js && ruby > python && ruby > swift && ruby > html) {
+    if (ruby > c && ruby > js && ruby > python && ruby > swift && ruby > html) {
       $(".ruby").fadeIn();
-    } else if(c > ruby && c > js && c > python && c > swift && c > html) {
+    } else if (c > ruby && c > js && c > python && c > swift && c > html) {
       $(".c#").fadeIn();
-    } else if(js > ruby && js > c && js > python && js > swift && js > html) {
+    } else if (js > ruby && js > c && js > python && js > swift && js > html) {
       $(".js").fadeIn();
-    } else if(python > ruby && python > c && python > js && python > swift && python > html) {
+    } else if (python > ruby && python > c && python > js && python > swift && python > html) {
       $(".python").val();
-    } else if(swift > ruby && swift > c && swift > js && swift > python && swift > html) {
+    } else if (swift > ruby && swift > c && swift > js && swift > python && swift > html) {
       $(".swift").val();
-    } else if(html > ruby && html > c && html > js && html > python && html > swift) {
+    } else if (html > ruby && html > c && html > js && html > python && html > swift) {
       $(".html").val();
     }
 
