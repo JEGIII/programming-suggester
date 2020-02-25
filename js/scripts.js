@@ -13,6 +13,13 @@ $(document).ready(function() {
     let levelInput = $("input:radio[name=level]:checked").val();
     let infoInput = $("input:radio[name=info]:checked").val();
     let areaInput = $("input:radio[name=area]:checked").val();
+
+    console.log(nameInput);
+    console.log(fieldInput);
+    console.log(osInput);
+    console.log(levelInput);
+    console.log(infoInput);
+    console.log(areaInput);
     
     /*One concern I'm having is if the if-statement should look like this:
     
