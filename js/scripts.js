@@ -20,17 +20,108 @@ $(document).ready(function() {
     console.log(levelInput);
     console.log(infoInput);
     console.log(areaInput);
+
+    if (fieldInput === "ruby") {
+      ruby ++;
+    }
+    if (osInput === "apple") {
+      ruby ++;
+    }
+    if (levelInput === "solid") {
+      ruby ++;
+    }
+    if (infoInput === "online") {
+      ruby ++;
+    }
+    if (areaInput === "school" || "anywhere" || "home") {
+      ruby ++;
+    }
+
+
+    if (fieldInput === "c#") {
+      c ++;
+    }
+    if (osInput === "windows") {
+      c ++;
+    }
+    if (levelInput === "in-depth") {
+      c ++;
+    }
+    if (infoInput === "online") {
+      c ++;
+    }
+    if (areaInput === "school" || "anywhere" || "home"){
+      c ++;
+    }
+
+
+    if (fieldInput === "js") {
+      js ++;
+    }
+    if (osInput === "windows" || "apple") {
+      js ++;
+    }
+    if (levelInput === "easy") {
+      js ++;
+    }
+    if (infoInput === "individual" || "online") {
+      js ++;
+    }
+    if (areaInput === "school" || "anywhere" || "home") {
+      js ++;
+    }
+
+
+    if (fieldInput === "python") {
+      python ++;
+    }
+    if (osInput === "windows") {
+      python ++;
+    }
+    if (levelInput === "solid") {
+      python ++;
+    }
+    if (infoInput === "pairing" || "individual" || "online") {
+      python ++;
+    }
+    if (areaInput === "school" || "anywhere" || "home") {
+      python ++;
+    }
+
+
+    if (fieldInput === "swift") {
+      swift ++;
+    }
+    if (osInput === "apple") {
+      swift ++;
+    }
+    if (levelInput === "easy") {
+      swift ++;
+    }
+    if (infoInput === "individual" || "online") {
+      swift ++;
+    }
+    if (areaInput === "school" || "anywhere" || "home") {
+      swift ++;
+    }
+
     
-    /*One concern I'm having is if the if-statement should look like this:
-    
-    if (fieldInput === "ruby" && osInput === "ms" && levelInput === "ruby" && infoInput === "ruby" && areaInput === "school anywhere home") {
-      
-    or this:
-      
-    if (ruby > c && ruby > js && ruby > python && ruby > swift && ruby > html) {
-    $(".ruby").fadeIn(); 
-    
-    */
+    if (fieldInput === "html") {
+      html ++;
+    }
+    if (osInput === "windows" || "apple") {
+      html ++;
+    }
+    if (levelInput === "easy") {
+      html ++;
+    }
+    if (infoInput === "individual" || "online") {
+      html ++;
+    }
+    if (areaInput === "school" || "anywhere" || "home") {
+      html ++;
+    }
+
 
     if (ruby > c && ruby > js && ruby > python && ruby > swift && ruby > html) {
       $(".ruby").fadeIn();
@@ -39,12 +130,13 @@ $(document).ready(function() {
     } else if (js > ruby && js > c && js > python && js > swift && js > html) {
       $(".js").fadeIn();
     } else if (python > ruby && python > c && python > js && python > swift && python > html) {
-      $(".python").val();
+      $(".python").fadeIn();
     } else if (swift > ruby && swift > c && swift > js && swift > python && swift > html) {
-      $(".swift").val();
+      $(".swift").fadeIn();
     } else if (html > ruby && html > c && html > js && html > python && html > swift) {
-      $(".html").val();
+      $(".html").fadeIn();
     }
+
 
     if(ruby === Math.max(c, js, python, swift, html)) {
       $(".ruby").fadeIn();
