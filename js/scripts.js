@@ -21,7 +21,7 @@ $(document).ready(function() {
     console.log(infoInput);
     console.log(areaInput);
 
-    if (fieldInput === "ruby") {
+    if (fieldInput === "app") {
       ruby ++;
     }
     if (osInput === "apple") {
@@ -55,13 +55,13 @@ $(document).ready(function() {
     }
 
 
-    if (fieldInput === "js") {
+    if (fieldInput === "web") {
       js ++;
     }
     if (osInput === "windows" || "apple") {
       js ++;
     }
-    if (levelInput === "easy") {
+    if (levelInput === "middle") {
       js ++;
     }
     if (infoInput === "individual" || "online") {
@@ -72,7 +72,7 @@ $(document).ready(function() {
     }
 
 
-    if (fieldInput === "python") {
+    if (fieldInput === "intel") {
       python ++;
     }
     if (osInput === "windows") {
@@ -89,7 +89,7 @@ $(document).ready(function() {
     }
 
 
-    if (fieldInput === "swift") {
+    if (fieldInput === "app") {
       swift ++;
     }
     if (osInput === "apple") {
@@ -105,8 +105,8 @@ $(document).ready(function() {
       swift ++;
     }
 
-    
-    if (fieldInput === "html") {
+
+    if (fieldInput === "web") {
       html ++;
     }
     if (osInput === "windows" || "apple") {
@@ -122,21 +122,20 @@ $(document).ready(function() {
       html ++;
     }
 
+    console.log(ruby);
+    console.log(c);
+    console.log(python);
+    console.log(js);
+    console.log(swift);
+    console.log(html);
 
-    if (ruby > c && ruby > js && ruby > python && ruby > swift && ruby > html) {
-      $(".ruby").fadeIn();
-    } else if (c > ruby && c > js && c > python && c > swift && c > html) {
-      $(".c#").fadeIn();
-    } else if (js > ruby && js > c && js > python && js > swift && js > html) {
-      $(".js").fadeIn();
-    } else if (python > ruby && python > c && python > js && python > swift && python > html) {
-      $(".python").fadeIn();
-    } else if (swift > ruby && swift > c && swift > js && swift > python && swift > html) {
-      $(".swift").fadeIn();
-    } else if (html > ruby && html > c && html > js && html > python && html > swift) {
-      $(".html").fadeIn();
-    }
 
+    $(".ruby result").hide();
+    $(".c result").hide();
+    $(".js result").hide();
+    $(".python result").hide();
+    $(".swift result").hide();
+    $(".html result").hide();
 
     if(ruby === Math.max(c, js, python, swift, html)) {
       $(".ruby").fadeIn();
@@ -162,7 +161,7 @@ $(document).ready(function() {
       $(".html").fadeIn();
     }
 
-    $(".result").fadeIn();
+    $("#result").fadeIn();
     
     event.preventDefault();
   });
