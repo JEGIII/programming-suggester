@@ -21,8 +21,6 @@ This webpage will take ask the user a series of questions, varying from preferre
 <ul>
 <li>", you should learn:" </li>
 </ul>
-
-<li>After the survey has been completed, the program will return all programming languages rather than the one with the most tallies</li>
 </ul>
 
 ## License
