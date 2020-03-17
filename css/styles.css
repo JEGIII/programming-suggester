@@ -8,7 +8,13 @@ h1 {
   font-weight: bold;
 }
 
-#result {
+#result,
+  .ruby,
+  .c,
+  .js,
+  .python,
+  .swift,
+  .html {
   display: none;
 }
 

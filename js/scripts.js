@@ -130,34 +130,34 @@ $(document).ready(function() {
     console.log(html);
 
 
-    $(".ruby result").hide();
-    $(".c result").hide();
-    $(".js result").hide();
-    $(".python result").hide();
-    $(".swift result").hide();
-    $(".html result").hide();
+    $(".ruby").hide();
+    $(".c").hide();
+    $(".js").hide();
+    $(".python").hide();
+    $(".swift").hide();
+    $(".html").hide();
 
-    if(ruby === Math.max(c, js, python, swift, html)) {
+    if(ruby > Math.max(c, js, python, swift, html)) {
       $(".ruby").fadeIn();
     }
     
-    if(c === Math.max(ruby, js, python, swift, html)) {
+    if(c > Math.max(ruby, js, python, swift, html)) {
       $(".c#").fadeIn();
     }
 
-    if(js === Math.max(ruby, c, python, swift, html)) {
+    if(js > Math.max(ruby, c, python, swift, html)) {
       $(".js").fadeIn();
     }
 
-    if(python === Math.max(ruby, c, js, swift, html)) {
+    if(python > Math.max(ruby, c, js, swift, html)) {
       $(".python").fadeIn();
     }
 
-    if(swift === Math.max(ruby, c, js, python, html)) {
+    if(swift > Math.max(ruby, c, js, python, html)) {
       $(".swift").fadeIn();
     }
 
-    if(html === Math.max(ruby, c, js, python, swift)) {
+    if(html > Math.max(ruby, c, js, python, swift)) {
       $(".html").fadeIn();
     }
 
